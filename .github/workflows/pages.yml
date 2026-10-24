@@ -4,7 +4,7 @@ name: Publicar demo
 
 on:
   push:
-    branches: [main]
+    branches: [main, ccr-262f8d21-wjix1z]
   workflow_dispatch:
 
 permissions:
