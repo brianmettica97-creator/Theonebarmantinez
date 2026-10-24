@@ -1,0 +1,23 @@
+{
+  "name": "the-one-experience",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The One Experience — propuesta digital de NOVANTIQ para The One Bar Martínez (DEMO)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:db": "vitest run tests/db",
+    "test:e2e": "node scripts/e2e-smoke.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.2.12",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}

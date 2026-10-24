@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The One Bar Martínez · Carta, experiencias y reservas</title>
+  <meta name="description" content="Propuesta digital de NOVANTIQ para The One Bar Martínez: carta digital, promociones, experiencias, pedidos por WhatsApp y solicitudes de reserva.">
+  <!--ROBOTS-->
+  <meta name="theme-color" content="#0e0e10">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="The One Bar Martínez · Carta, experiencias y reservas">
+  <meta property="og:description" content="Carta digital, promociones, experiencias y reservas.">
+  <!--OG-->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script type="module" src="/src/pages/public/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div id="demo-banner" role="note"></div>
+  <header class="site-header" id="site-header">
+    <div class="wrap header-row">
+      <a href="#inicio" class="brand" id="brand" aria-label="Ir al inicio"></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <a href="#carta">Carta</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost cart-btn" id="cart-open" aria-haspopup="dialog">
+          <span aria-hidden="true">🛒</span><span class="sr-only">Abrir pedido</span><span class="badge" id="cart-count" hidden>0</span>
+        </button>
+        <button class="btn btn-ghost nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span aria-hidden="true">☰</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="contenido" tabindex="-1">
+    <section id="inicio" class="hero" aria-labelledby="hero-title"></section>
+    <section id="carta" class="section" aria-labelledby="carta-title"></section>
+    <section id="promociones" class="section alt" aria-labelledby="promos-title"></section>
+    <section id="experiencias" class="section" aria-labelledby="exp-title"></section>
+    <section id="eventos" class="section alt" aria-labelledby="eventos-title"></section>
+    <section id="reservas" class="section" aria-labelledby="reservas-title"></section>
+    <section id="contacto" class="section alt" aria-labelledby="contacto-title"></section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <nav class="bottom-bar" aria-label="Accesos rápidos">
+    <a href="#carta"><span aria-hidden="true">🍽️</span>Carta</a>
+    <a href="#promociones"><span aria-hidden="true">🏷️</span>Promos</a>
+    <a href="#experiencias"><span aria-hidden="true">🎯</span>Juegos</a>
+    <a href="#reservas"><span aria-hidden="true">📅</span>Reservas</a>
+    <a href="#contacto"><span aria-hidden="true">📍</span>Contacto</a>
+  </nav>
+  <dialog id="cart-dialog" class="drawer" aria-labelledby="cart-title"></dialog>
+  <div id="toasts" class="toasts" role="status" aria-live="polite" popover="manual"></div>
+</body>
+</html>
