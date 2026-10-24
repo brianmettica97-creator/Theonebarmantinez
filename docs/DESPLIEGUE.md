@@ -6,6 +6,9 @@ Node ≥ 20, npm, una cuenta de Supabase (producción) y un hosting estático (N
 ## 1. Demo estática (sin Supabase)
 `cp .env.example .env` (dejar `VITE_APP_MODE=demo`, claves vacías) → `npm ci && npm run build` → publicar `dist/`. Funciona en cualquier hosting estático (rutas relativas; sin reescrituras). La demo queda `noindex`.
 
+### Publicar la demo en GitHub Pages
+El workflow `.github/workflows/pages.yml` compila en modo demo y publica `dist/`. Pasos: (1) fusionar la rama a `main`; (2) en el repositorio, *Settings → Pages → Source: GitHub Actions*; (3) el link queda `https://<usuario>.github.io/<repo>/` y el panel en `/admin/`. La demo sale `noindex`. Si el repositorio es privado, Pages puede requerir un plan pago.
+
 ## 2. Supabase (producción)
 1. Crear proyecto. En **Authentication → Providers → Email**: desactivar *Allow new users to sign up*. Configurar la URL del sitio y las *Redirect URLs* (para recuperar contraseña).
 2. Aplicar migraciones en orden (`supabase db push` con la CLI, o pegar en el SQL Editor): `0001_schema.sql`, `0002_rls.sql`, `0003_storage.sql`.
